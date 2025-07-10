@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x86",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/lib/SDL/i686-w64-mingw32/include/**",
+        "C:/lib/SDL3_image/i686-w64-mingw32/include/**",
+        "C:/lib/SDL3_ttf/i686-w64-mingw32/include/**"
+      ],
+      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x86",
+      "compilerArgs": [
+        "-I", "C:/lib/SDL/i686-w64-mingw32/include",
+        "-I", "C:/lib/SDL3_image/i686-w64-mingw32/include/SDL3_image",
+        "-I", "C:/lib/SDL3_ttf/i686-w64-mingw32/include/SDL3_ttf",
+        "-L", "C:/lib/SDL3_image/i686-w64-mingw32/lib",
+        "-L", "C:/lib/SDL/i686-w64-mingw32/lib",
+        "-L", "C:/lib/SDL3_ttf/i686-w64-mingw32/lib",
+        "-lSDL3",
+        "-lSDL3_image",
+        "-lSDL3_ttf",
+        "D:/projects/ChessEngine/src/main.cpp",
+        "-o", "main.exe"
+      ]
+    }
+  ],
+  "version": 4
+}

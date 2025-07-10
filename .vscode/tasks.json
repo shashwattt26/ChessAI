@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build with mingw",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/src/main.cpp",
+        "-I",
+        "C:/lib/SDL/i686-w64-mingw32/include",
+        "-I",
+        "C:/lib/SDL3_image/i686-w64-mingw32/include",
+        "-I",
+        "C:/lib/SDL3_ttf/i686-w64-mingw32/include",
+        "-L",
+        "C:/lib/SDL3_image/i686-w64-mingw32/lib",
+        "-L",
+        "C:/lib/SDL/i686-w64-mingw32/lib",
+        "-L",
+        "C:/lib/SDL3_ttf/i686-w64-mingw32/lib",
+        "-lSDL3",
+        "-lSDL3_image",
+        "-lSDL3_ttf",
+        "-o",
+        "main.exe"
+      ],
+      "group": "build",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
